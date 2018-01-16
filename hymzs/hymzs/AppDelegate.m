@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AFNetworking.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,48 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//https://suggest.taobao.com/sug?code=utf-8&q=&callback=cb
+//    https://hq.sinajs.cn/list=sh601006
+//    NSURL *URL = [NSURL URLWithString:@"https://hq.sinajs.cn/list=sh601006"];
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
+//    [manager GET:URL.absoluteString parameters:nil success:^(NSURLSessionTask *task, id responseObject) {
+//        NSLog(@"JSON: %@", responseObject);
+//    } failure:^(NSURLSessionTask *operation, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//    }];
+    
+    //1.创建一个请求管理者
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //初始化响应者
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    //添加一种支持的类型
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", @"text/json", nil];
+
+    //2.发送请求
+    NSDictionary *dict = @{
+                           @"type":@"yuantong",
+                           @"postid":@"888105295620315380"
+                           };
+    NSString *url = @"https://www.kuaidi100.com/query";
+    url = [url stringByRemovingPercentEncoding];
+
+    [manager POST:url parameters:dict progress:^(NSProgress * _Nonnull uploadProgress) {
+
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"请求成功%@",responseObject);
+        NSData *data = responseObject;
+        NSDictionary *dictionary =[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        NSLog(@"dictionary %@",dictionary);
+
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if (error) {
+            NSLog(@"错误%@",error);
+        }
+    }];
+    
     return YES;
 }
 
