@@ -14,9 +14,12 @@
 		77834772200D973000C2AEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77834771200D973000C2AEFD /* Assets.xcassets */; };
 		77834775200D973000C2AEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77834773200D973000C2AEFD /* LaunchScreen.storyboard */; };
 		77834778200D973000C2AEFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77834777200D973000C2AEFD /* main.m */; };
+		DE63E758666AFF6CC8E842A9 /* libPods-hymzs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA1FDD52EFD35636A8E5E21 /* libPods-hymzs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AA1FDD52EFD35636A8E5E21 /* libPods-hymzs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hymzs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7534386714636876E0913C4E /* Pods-hymzs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hymzs.release.xcconfig"; path = "Pods/Target Support Files/Pods-hymzs/Pods-hymzs.release.xcconfig"; sourceTree = "<group>"; };
 		77834762200D973000C2AEFD /* hymzs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hymzs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77834765200D973000C2AEFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77834766200D973000C2AEFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		77834774200D973000C2AEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77834776200D973000C2AEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77834777200D973000C2AEFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC9705F04638A6FBE396AA5D /* Pods-hymzs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hymzs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hymzs/Pods-hymzs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE63E758666AFF6CC8E842A9 /* libPods-hymzs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14D713702E281CE27C60994D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA1FDD52EFD35636A8E5E21 /* libPods-hymzs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77834759200D973000C2AEFD = {
 			isa = PBXGroup;
 			children = (
 				77834764200D973000C2AEFD /* hymzs */,
 				77834763200D973000C2AEFD /* Products */,
+				D5F0C1E2180C4A3295DA21AC /* Pods */,
+				14D713702E281CE27C60994D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +89,15 @@
 			path = hymzs;
 			sourceTree = "<group>";
 		};
+		D5F0C1E2180C4A3295DA21AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC9705F04638A6FBE396AA5D /* Pods-hymzs.debug.xcconfig */,
+				7534386714636876E0913C4E /* Pods-hymzs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7783477B200D973000C2AEFD /* Build configuration list for PBXNativeTarget "hymzs" */;
 			buildPhases = (
+				89ACE1542C3B6276B852DC13 /* [CP] Check Pods Manifest.lock */,
 				7783475E200D973000C2AEFD /* Sources */,
 				7783475F200D973000C2AEFD /* Frameworks */,
 				77834760200D973000C2AEFD /* Resources */,
+				D979B06A1A2BBA888817E064 /* [CP] Embed Pods Frameworks */,
+				9B7FEE348CAA8BAF08CC7CA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89ACE1542C3B6276B852DC13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hymzs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B7FEE348CAA8BAF08CC7CA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hymzs/Pods-hymzs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D979B06A1A2BBA888817E064 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hymzs/Pods-hymzs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7783475E200D973000C2AEFD /* Sources */ = {
@@ -280,6 +358,7 @@
 		};
 		7783477C200D973000C2AEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9705F04638A6FBE396AA5D /* Pods-hymzs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +373,7 @@
 		};
 		7783477D200D973000C2AEFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7534386714636876E0913C4E /* Pods-hymzs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
