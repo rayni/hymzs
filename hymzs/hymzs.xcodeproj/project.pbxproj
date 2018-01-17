@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770AD1E2200E38860015753A /* ActivityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 770AD1E0200E38860015753A /* ActivityTableViewCell.m */; };
+		770AD1E3200E38860015753A /* ActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770AD1E1200E38860015753A /* ActivityTableViewCell.xib */; };
+		771F065C200E163F00F8CF88 /* AllBanksCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771F065A200E163F00F8CF88 /* AllBanksCollectionViewCell.m */; };
+		771F065D200E163F00F8CF88 /* AllBanksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 771F065B200E163F00F8CF88 /* AllBanksCollectionViewCell.xib */; };
 		77834767200D973000C2AEFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77834766200D973000C2AEFD /* AppDelegate.m */; };
 		7783476A200D973000C2AEFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77834769200D973000C2AEFD /* ViewController.m */; };
 		7783476D200D973000C2AEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7783476B200D973000C2AEFD /* Main.storyboard */; };
@@ -14,12 +18,19 @@
 		77834772200D973000C2AEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77834771200D973000C2AEFD /* Assets.xcassets */; };
 		77834775200D973000C2AEFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77834773200D973000C2AEFD /* LaunchScreen.storyboard */; };
 		77834778200D973000C2AEFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77834777200D973000C2AEFD /* main.m */; };
+		77834782200DEBBC00C2AEFD /* ConstantsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77834781200DEBBC00C2AEFD /* ConstantsManager.m */; };
 		DE63E758666AFF6CC8E842A9 /* libPods-hymzs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA1FDD52EFD35636A8E5E21 /* libPods-hymzs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AA1FDD52EFD35636A8E5E21 /* libPods-hymzs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hymzs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7534386714636876E0913C4E /* Pods-hymzs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hymzs.release.xcconfig"; path = "Pods/Target Support Files/Pods-hymzs/Pods-hymzs.release.xcconfig"; sourceTree = "<group>"; };
+		770AD1DF200E38860015753A /* ActivityTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityTableViewCell.h; sourceTree = "<group>"; };
+		770AD1E0200E38860015753A /* ActivityTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityTableViewCell.m; sourceTree = "<group>"; };
+		770AD1E1200E38860015753A /* ActivityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTableViewCell.xib; sourceTree = "<group>"; };
+		771F0659200E163F00F8CF88 /* AllBanksCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllBanksCollectionViewCell.h; sourceTree = "<group>"; };
+		771F065A200E163F00F8CF88 /* AllBanksCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllBanksCollectionViewCell.m; sourceTree = "<group>"; };
+		771F065B200E163F00F8CF88 /* AllBanksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllBanksCollectionViewCell.xib; sourceTree = "<group>"; };
 		77834762200D973000C2AEFD /* hymzs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hymzs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77834765200D973000C2AEFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77834766200D973000C2AEFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,6 +42,10 @@
 		77834774200D973000C2AEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77834776200D973000C2AEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77834777200D973000C2AEFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77834780200DEBBC00C2AEFD /* ConstantsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstantsManager.h; sourceTree = "<group>"; };
+		77834781200DEBBC00C2AEFD /* ConstantsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstantsManager.m; sourceTree = "<group>"; };
+		77834783200DF91800C2AEFD /* GobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GobalDefine.h; sourceTree = "<group>"; };
+		77834785200DFACB00C2AEFD /* Hymzs.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hymzs.pch; sourceTree = "<group>"; };
 		DC9705F04638A6FBE396AA5D /* Pods-hymzs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hymzs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hymzs/Pods-hymzs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +90,9 @@
 		77834764200D973000C2AEFD /* hymzs */ = {
 			isa = PBXGroup;
 			children = (
+				77834784200DFAB000C2AEFD /* SupportingFiles */,
+				7783477F200DEAD600C2AEFD /* Common */,
+				77834786200E0B7400C2AEFD /* Activity */,
 				77834765200D973000C2AEFD /* AppDelegate.h */,
 				77834766200D973000C2AEFD /* AppDelegate.m */,
 				77834768200D973000C2AEFD /* ViewController.h */,
@@ -87,6 +105,37 @@
 				7783476E200D973000C2AEFD /* hymzs.xcdatamodeld */,
 			);
 			path = hymzs;
+			sourceTree = "<group>";
+		};
+		7783477F200DEAD600C2AEFD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				77834783200DF91800C2AEFD /* GobalDefine.h */,
+				77834780200DEBBC00C2AEFD /* ConstantsManager.h */,
+				77834781200DEBBC00C2AEFD /* ConstantsManager.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		77834784200DFAB000C2AEFD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				77834785200DFACB00C2AEFD /* Hymzs.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		77834786200E0B7400C2AEFD /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				771F0659200E163F00F8CF88 /* AllBanksCollectionViewCell.h */,
+				771F065A200E163F00F8CF88 /* AllBanksCollectionViewCell.m */,
+				771F065B200E163F00F8CF88 /* AllBanksCollectionViewCell.xib */,
+				770AD1DF200E38860015753A /* ActivityTableViewCell.h */,
+				770AD1E0200E38860015753A /* ActivityTableViewCell.m */,
+				770AD1E1200E38860015753A /* ActivityTableViewCell.xib */,
+			);
+			path = Activity;
 			sourceTree = "<group>";
 		};
 		D5F0C1E2180C4A3295DA21AC /* Pods */ = {
@@ -161,6 +210,8 @@
 			files = (
 				77834775200D973000C2AEFD /* LaunchScreen.storyboard in Resources */,
 				77834772200D973000C2AEFD /* Assets.xcassets in Resources */,
+				770AD1E3200E38860015753A /* ActivityTableViewCell.xib in Resources */,
+				771F065D200E163F00F8CF88 /* AllBanksCollectionViewCell.xib in Resources */,
 				7783476D200D973000C2AEFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7783476A200D973000C2AEFD /* ViewController.m in Sources */,
+				77834782200DEBBC00C2AEFD /* ConstantsManager.m in Sources */,
 				77834770200D973000C2AEFD /* hymzs.xcdatamodeld in Sources */,
 				77834778200D973000C2AEFD /* main.m in Sources */,
 				77834767200D973000C2AEFD /* AppDelegate.m in Sources */,
+				770AD1E2200E38860015753A /* ActivityTableViewCell.m in Sources */,
+				771F065C200E163F00F8CF88 /* AllBanksCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +417,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2N7EZ87C2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/hymzs/SupportingFiles/Hymzs.pch";
 				INFOPLIST_FILE = hymzs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hymzs;
@@ -378,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z2N7EZ87C2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/hymzs/SupportingFiles/Hymzs.pch";
 				INFOPLIST_FILE = hymzs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hymzs;

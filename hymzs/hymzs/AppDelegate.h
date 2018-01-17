@@ -15,8 +15,9 @@
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
-- (void)saveContext;
+@property (strong, nonatomic) ConstantsManager *constantManager;
 
+- (void)saveContext;
 
 @end
 
