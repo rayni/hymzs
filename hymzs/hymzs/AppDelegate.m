@@ -8,15 +8,16 @@
 
 #import "AppDelegate.h"
 #import "AFNetworking.h"
+#import "BaiduMobStat.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //百度统计SDK设置
+    [[BaiduMobStat defaultStat] startWithAppId:@"5e8d5a9244"];
     //初始化全部常量
     self.constantManager = [[ConstantsManager alloc] init];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];

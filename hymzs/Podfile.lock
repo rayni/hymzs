@@ -14,13 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BaiduMobStat (4.6.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - BaiduMobStat
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMobStat: 4b75c0e1f9472ba4fc549b9352141c91d34ee27c
 
-PODFILE CHECKSUM: 45d03ad7211a0a6eb759a9a7227b9465690f7379
+PODFILE CHECKSUM: 5e1f3ab14839abe25b57d1ccbe21abccf8fd2396
 
 COCOAPODS: 1.3.1

@@ -460,7 +460,7 @@
 				7783477A200D973000C2AEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		7783477B200D973000C2AEFD /* Build configuration list for PBXNativeTarget "hymzs" */ = {
 			isa = XCConfigurationList;
@@ -469,7 +469,7 @@
 				7783477D200D973000C2AEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
