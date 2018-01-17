@@ -15,8 +15,8 @@
     // Initialization code
     self.layer.cornerRadius = 8;
     self.layer.masksToBounds = YES;
+    self.backgroundColor = [UIColor lightGrayColor];
 }
-
 
 
 @end

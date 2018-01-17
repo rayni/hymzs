@@ -9,11 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--活动-->
         <scene sceneID="SMe-LD-7wP">
             <objects>
                 <navigationController navigationBarHidden="YES" id="XV5-O4-3bx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="00d-nJ-hge"/>
+                    <tabBarItem key="tabBarItem" title="活动" id="00d-nJ-hge"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mIZ-JM-hf7">
                         <autoresizingMask key="autoresizingMask"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-196" y="-476"/>
         </scene>
-        <!--View Controller-->
+        <!--Activity View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ActivityViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="czQ-qO-sya">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,6 +110,7 @@
                                             <constraint firstAttribute="width" constant="42" id="dWA-wL-U1y"/>
                                         </constraints>
                                         <state key="normal" image="筛选"/>
+                                        <state key="selected" title="完成"/>
                                         <connections>
                                             <action selector="selectBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="usm-d4-AWc"/>
                                         </connections>
@@ -187,6 +188,7 @@
                         <outlet property="allBankListView" destination="Lh3-fh-Ze7" id="liA-Ze-Gmp"/>
                         <outlet property="allBankShowView" destination="5Uv-F4-gkq" id="ae0-it-sLQ"/>
                         <outlet property="selectedBankListView" destination="4kE-w0-NJy" id="dgK-aS-BRw"/>
+                        <outlet property="selectedBanksLabel" destination="GRb-mi-5V6" id="nrA-1c-uXW"/>
                         <outlet property="tableView" destination="xg8-eI-Cwe" id="p5D-Mw-Nuj"/>
                     </connections>
                 </viewController>
@@ -194,7 +196,7 @@
             </objects>
             <point key="canvasLocation" x="582" y="-476"/>
         </scene>
-        <!--View Controller-->
+        <!--发现-->
         <scene sceneID="u6d-MZ-FU8">
             <objects>
                 <viewController id="cjl-ac-bPF" sceneMemberID="viewController">
@@ -204,7 +206,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="I4g-U1-Y1s"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="5tZ-bv-18S"/>
+                    <tabBarItem key="tabBarItem" title="发现" id="5tZ-bv-18S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8HK-ev-Vyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

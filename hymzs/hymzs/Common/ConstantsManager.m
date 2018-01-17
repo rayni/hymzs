@@ -43,9 +43,8 @@ static ConstantsManager *_SharedInstanceOfConstantsManager;
 
 + (void)updateSelectedBanksby:(NSArray *)array
 {
-    [[ConstantsManager sharedInstance].selectedBanks removeAllObjects];
-    [[ConstantsManager sharedInstance].selectedBanks addObjectsFromArray:array];
     [[NSUserDefaults standardUserDefaults] setObject:array forKey:@"selectedBanksHistroy"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end
