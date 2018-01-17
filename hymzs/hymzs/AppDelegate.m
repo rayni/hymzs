@@ -19,6 +19,7 @@
     // Override point for customization after application launch.
     //初始化全部常量
     self.constantManager = [[ConstantsManager alloc] init];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
     
 //https://suggest.taobao.com/sug?code=utf-8&q=&callback=cb
 //    https://hq.sinajs.cn/list=sh601006
