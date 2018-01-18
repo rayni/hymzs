@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77359D36200F35B300FD8198 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77359D35200F35B300FD8198 /* BaseTabBarViewController.m */; };
+		77359D3A200F42D400FD8198 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 77359D38200F42D400FD8198 /* UIColor+Hex.m */; };
+		77359D3F200F5C0100FD8198 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77359D3E200F5C0100FD8198 /* DiscoveryViewController.m */; };
+		77359D42200F5D8400FD8198 /* HYMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77359D41200F5D8400FD8198 /* HYMViewController.m */; };
+		77359D45200F5DC100FD8198 /* HYMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77359D44200F5DC100FD8198 /* HYMNavigationController.m */; };
+		77359D49200F70A200FD8198 /* DiscoveryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77359D47200F70A200FD8198 /* DiscoveryTableViewCell.m */; };
+		77359D4A200F70A200FD8198 /* DiscoveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77359D48200F70A200FD8198 /* DiscoveryTableViewCell.xib */; };
 		77834767200D973000C2AEFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77834766200D973000C2AEFD /* AppDelegate.m */; };
 		7783476D200D973000C2AEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7783476B200D973000C2AEFD /* Main.storyboard */; };
 		77834770200D973000C2AEFD /* hymzs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7783476E200D973000C2AEFD /* hymzs.xcdatamodeld */; };
@@ -25,6 +32,19 @@
 /* Begin PBXFileReference section */
 		4AA1FDD52EFD35636A8E5E21 /* libPods-hymzs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-hymzs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7534386714636876E0913C4E /* Pods-hymzs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hymzs.release.xcconfig"; path = "Pods/Target Support Files/Pods-hymzs/Pods-hymzs.release.xcconfig"; sourceTree = "<group>"; };
+		77359D34200F35B300FD8198 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		77359D35200F35B300FD8198 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		77359D38200F42D400FD8198 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		77359D39200F42D400FD8198 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		77359D3D200F5C0100FD8198 /* DiscoveryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
+		77359D3E200F5C0100FD8198 /* DiscoveryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
+		77359D40200F5D8400FD8198 /* HYMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYMViewController.h; sourceTree = "<group>"; };
+		77359D41200F5D8400FD8198 /* HYMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMViewController.m; sourceTree = "<group>"; };
+		77359D43200F5DC100FD8198 /* HYMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYMNavigationController.h; sourceTree = "<group>"; };
+		77359D44200F5DC100FD8198 /* HYMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMNavigationController.m; sourceTree = "<group>"; };
+		77359D46200F70A200FD8198 /* DiscoveryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoveryTableViewCell.h; sourceTree = "<group>"; };
+		77359D47200F70A200FD8198 /* DiscoveryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoveryTableViewCell.m; sourceTree = "<group>"; };
+		77359D48200F70A200FD8198 /* DiscoveryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoveryTableViewCell.xib; sourceTree = "<group>"; };
 		77834762200D973000C2AEFD /* hymzs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hymzs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77834765200D973000C2AEFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77834766200D973000C2AEFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +89,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77359D37200F42D400FD8198 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				77359D38200F42D400FD8198 /* UIColor+Hex.m */,
+				77359D39200F42D400FD8198 /* UIColor+Hex.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		77359D3B200F5BAC00FD8198 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				77359D3C200F5BC200FD8198 /* UI */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		77359D3C200F5BC200FD8198 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				77359D3D200F5C0100FD8198 /* DiscoveryViewController.h */,
+				77359D3E200F5C0100FD8198 /* DiscoveryViewController.m */,
+				77359D46200F70A200FD8198 /* DiscoveryTableViewCell.h */,
+				77359D47200F70A200FD8198 /* DiscoveryTableViewCell.m */,
+				77359D48200F70A200FD8198 /* DiscoveryTableViewCell.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		77834759200D973000C2AEFD = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +142,11 @@
 				77834784200DFAB000C2AEFD /* SupportingFiles */,
 				7783477F200DEAD600C2AEFD /* Common */,
 				77834786200E0B7400C2AEFD /* Activity */,
+				77359D3B200F5BAC00FD8198 /* Discovery */,
 				77834765200D973000C2AEFD /* AppDelegate.h */,
 				77834766200D973000C2AEFD /* AppDelegate.m */,
+				77359D34200F35B300FD8198 /* BaseTabBarViewController.h */,
+				77359D35200F35B300FD8198 /* BaseTabBarViewController.m */,
 				7783476B200D973000C2AEFD /* Main.storyboard */,
 				77834771200D973000C2AEFD /* Assets.xcassets */,
 				77834773200D973000C2AEFD /* LaunchScreen.storyboard */,
@@ -108,9 +160,14 @@
 		7783477F200DEAD600C2AEFD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				77359D37200F42D400FD8198 /* Category */,
 				77834783200DF91800C2AEFD /* GobalDefine.h */,
 				77834780200DEBBC00C2AEFD /* ConstantsManager.h */,
 				77834781200DEBBC00C2AEFD /* ConstantsManager.m */,
+				77359D40200F5D8400FD8198 /* HYMViewController.h */,
+				77359D41200F5D8400FD8198 /* HYMViewController.m */,
+				77359D43200F5DC100FD8198 /* HYMNavigationController.h */,
+				77359D44200F5DC100FD8198 /* HYMNavigationController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -220,6 +277,7 @@
 				77834772200D973000C2AEFD /* Assets.xcassets in Resources */,
 				77DC232F200EF3E1004801F3 /* ActivityTableViewCell.xib in Resources */,
 				77DC232E200EF3E1004801F3 /* AllBanksCollectionViewCell.xib in Resources */,
+				77359D4A200F70A200FD8198 /* DiscoveryTableViewCell.xib in Resources */,
 				7783476D200D973000C2AEFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +341,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				77834782200DEBBC00C2AEFD /* ConstantsManager.m in Sources */,
+				77359D42200F5D8400FD8198 /* HYMViewController.m in Sources */,
 				77834770200D973000C2AEFD /* hymzs.xcdatamodeld in Sources */,
 				77834778200D973000C2AEFD /* main.m in Sources */,
+				77359D36200F35B300FD8198 /* BaseTabBarViewController.m in Sources */,
+				77359D3A200F42D400FD8198 /* UIColor+Hex.m in Sources */,
 				77834767200D973000C2AEFD /* AppDelegate.m in Sources */,
 				77DC2330200EF3E1004801F3 /* AllBanksCollectionViewCell.m in Sources */,
 				77DC2331200EF3E1004801F3 /* ActivityViewController.m in Sources */,
+				77359D49200F70A200FD8198 /* DiscoveryTableViewCell.m in Sources */,
 				77DC232D200EF3E1004801F3 /* ActivityTableViewCell.m in Sources */,
+				77359D45200F5DC100FD8198 /* HYMNavigationController.m in Sources */,
+				77359D3F200F5C0100FD8198 /* DiscoveryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

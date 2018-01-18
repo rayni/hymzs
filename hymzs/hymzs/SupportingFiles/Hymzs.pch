@@ -14,5 +14,5 @@
 
 #import "GobalDefine.h"
 #import "ConstantsManager.h"
-
+#import "UIColor+Hex.h"
 #endif /* PrefixHeader_pch */

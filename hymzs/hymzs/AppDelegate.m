@@ -21,6 +21,14 @@
     //初始化全部常量
     self.constantManager = [[ConstantsManager alloc] init];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:NO];
+    //设置全局导航条z颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHex:0xFF7419]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0 green:1.f*0xb4/0xff blue:1.f alpha:1.f]];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     
 //https://suggest.taobao.com/sug?code=utf-8&q=&callback=cb
 //    https://hq.sinajs.cn/list=sh601006

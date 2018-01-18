@@ -26,6 +26,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //导航栏设置
+    
     //全部银行展示页面初始化
     self.ifSelectingBanks = NO;
     self.allBankShowView.alpha = 0;
@@ -116,6 +118,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)rightBarBtnTapped:(id)sender
+{
+    [self selectBtnTapped:nil];
+}
 
 - (IBAction)selectBtnTapped:(UIButton *)sender {
     CGRect frame = self.allBankListView.frame;
@@ -126,7 +132,7 @@
             self.allBankListView.frame = CGRectMake(25,  - frame.size.height, frame.size.width, frame.size.height);
             self.allBankShowView.alpha = 0;
         }];
-        [sender setSelected:NO];
+        [self.navigationItem.rightBarButtonItem setImage:[UIImage imageNamed:@"筛选"]];
     }
     else
     {
@@ -135,8 +141,9 @@
             self.allBankListView.frame = CGRectMake(25, 15, frame.size.width, frame.size.height);
             self.allBankShowView.alpha = 1;
         }];
-        [sender setSelected:YES];
-        
+        UIBarButtonItem *item = self.navigationItem.rightBarButtonItem;
+        [self.navigationItem.rightBarButtonItem setImage:nil];
+//        [self.navigationItem.rightBarButtonItem setTitle:@"完成"];
     }
     self.ifSelectingBanks = !self.ifSelectingBanks;
     
@@ -232,6 +239,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ActivityTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ActivityTableViewCellIdentifier];
+    if(cell == nil)
+    {
+        cell = [[ActivityTableViewCell alloc] init];
+    }
     return cell;
 }
 
